@@ -1,0 +1,91 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer .field .value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  width: 60px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.timer .field .label {
+  font-size: 1rem;
+  color: #888;
+}
+
+#datetime-picker {
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button[data-start] {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 20px;
+}
+
+button[data-start]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button[data-start]:hover:not([disabled]) {
+  background-color: #45a049;
+}
+
+.go-back-link {
+  font-size: 1rem;
+  color: #4caf50;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f4f4f9;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.go-back-link:hover {
+  background-color: #e0e0e0;
+}
